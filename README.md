@@ -141,5 +141,24 @@ As AI systems increasingly **interact with vulnerable individuals**, their outpu
 - Overall, interpretability is essential for establishing **clinical trust, accountability, and safety** in AI‑augmented mental health systems.  
   *Supported by:* Broader AI-in-healthcare reviews confirm that transparent models enable effective oversight and continuous improvement—key for deploying decision-support tools in clinical settings. ([WHO‑aligned XAI framework for e‑Health interventions, 2023](https://arxiv.org/pdf/2311.11055)) 
 
+---
+
+## 🔎 Detecting Implicit Suicidal Ideation: Challenges & Emerging Solutions
+
+- **LLMs struggle with implicit suicidal expressions**: Current models significantly underperform when suicidal intent is conveyed subtly without explicit language. Evaluation on the new “DeepSuiMind” dataset confirms this gap: F1 scores drop drastically under implicit settings.  
+  *Supported by:* Li et al. (2025), *“Can Large Language Models Identify Implicit Suicidal Ideation?”* ([arXiv 2502.17899](https://arxiv.org/abs/2502.17899))
+
+- **Explicit cues are easier but not sufficient**: Models perform much better on overt expressions (e.g. “I want to kill myself”) but routinely fail when users express distress metaphorically or indirectly.  
+  *Supported by:* Same study above – offers detailed contrast between explicit and implicit detection performance.
+
+- **Open-source solution: knowledge graph + deep model**: A GitHub project integrates a suicidality-oriented knowledge graph with neural networks to better detect subtle suicidal cues.  
+  *Solution link:* [BUILDING-AND-USING-PERSONAL-KNOWLEDGE-GRAPH-TO-IMPROVE‑SUICIDAL‑IDEATION‑DETECTION‑ON‑SOCIAL‑MEDIA](https://github.com/swethakathiresan/BUILDING-AND-USING-PERSONAL-KNOWLEDGE-GRAPH-TO-IMPROVE-SUICIDAL-IDEATION-DETECTION-ON-SOCIAL-MEDIA)
+
+- **Interpretability methods can aid detection and trust**: Techniques like SHAP, attention visualization, or explanation generation help identify which subtle linguistic signals contribute to a suicidal-risk flag and foster clinician/user trust.  
+  *Supported by:* Li et al. emphasize the importance of interpretable outputs for critical mental health applications (2025).
+
+- **Is interpretability a viable improvement method?** Yes — by explicitly highlighting decision cues (e.g. pronouns like “alone”, metaphorical death references), interpretable models can guide both risk detection and model debugging, especially in cases lacking explicit language.
+
+
 
 Therefore, recent research has shifted toward developing models with **built-in explainability**, such as highlighting linguistic cues, extracting causal factors, or generating natural-language rationales.
