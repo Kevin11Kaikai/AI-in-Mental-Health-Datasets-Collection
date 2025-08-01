@@ -133,13 +133,13 @@ Conversational agents (e.g. chatbots) provide **CBT‑based coaching, psychoeduc
 As AI systems increasingly **interact with vulnerable individuals**, their outputs must be **transparent and trustworthy**:
 
 - For **risk detection**, clinicians need to understand *why* a post or message is flagged as dangerous—identifying which linguistic cues triggered the alert and whether the reasoning aligns with clinical judgment.  
-  *Supported by:* A systematic review emphasizes that interpretability (e.g., XAI methods) significantly influences clinicians’ trust in AI-generated risk assessments, but only when explanations are coherent and clinically meaningful. ([JMIR AI Trust Review, 2024](https://ai.jmir.org/2024/1/e53207), see “explanations enhance clinicians’ trust”) :contentReference[oaicite:1]{index=1}
+  *Supported by:* A systematic review emphasizes that interpretability (e.g., XAI methods) significantly influences clinicians’ trust in AI-generated risk assessments, but only when explanations are coherent and clinically meaningful. ([JMIR AI Trust Review, 2024](https://ai.jmir.org/2024/1/e53207), see “explanations enhance clinicians’ trust”) 
 
 - For **self-support tools**, users deserve clarity on how recommendations (e.g., “try journaling”) are generated, to build transparency and adherence. Interpretability helps users feel confident that advice is reasoned and safe.  
-  *Supported by:* Research in digital health underscores that explainability not only aids clinician oversight but also improves user acceptance and safety perception in sensitive applications like mental health. ([Explainable AI for Mental Health, PMC 2022](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9849399/)) :contentReference[oaicite:2]{index=2}
+  *Supported by:* Research in digital health underscores that explainability not only aids clinician oversight but also improves user acceptance and safety perception in sensitive applications like mental health. ([Explainable AI for Mental Health, PMC 2022](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9849399/))
 
 - Overall, interpretability is essential for establishing **clinical trust, accountability, and safety** in AI‑augmented mental health systems.  
-  *Supported by:* Broader AI-in-healthcare reviews confirm that transparent models enable effective oversight and continuous improvement—key for deploying decision-support tools in clinical settings. ([WHO‑aligned XAI framework for e‑Health interventions, 2023](https://arxiv.org/pdf/2311.11055)) :contentReference[oaicite:3]{index=3}
+  *Supported by:* Broader AI-in-healthcare reviews confirm that transparent models enable effective oversight and continuous improvement—key for deploying decision-support tools in clinical settings. ([WHO‑aligned XAI framework for e‑Health interventions, 2023](https://arxiv.org/pdf/2311.11055)) 
 
 
 Therefore, recent research has shifted toward developing models with **built-in explainability**, such as highlighting linguistic cues, extracting causal factors, or generating natural-language rationales.
