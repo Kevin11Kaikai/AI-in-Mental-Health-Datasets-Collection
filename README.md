@@ -95,15 +95,20 @@ Feel free to contribute by submitting a pull request with new datasets!
 
 Despite the growing availability of datasets in the field of AI for mental health, several critical **limitations and pain points** remain:
 
-### 🔍 Data Quality & Representativeness
+### 🔍 Data Quality & Representativeness ⚠️
 
-- **Over-reliance on social media**: Most current datasets are derived from Reddit or Twitter, which only offer a partial and often biased view of mental health discourse. These sources lack clinical depth and may **oversimplify complex psychiatric symptoms**.
+- **Over-reliance on social media**: Most datasets are derived from Reddit or Twitter, which only offer a biased and incomplete view of mental health. These sources lack clinical depth and may oversimplify psychiatric conditions.  
+  *Supported by:* [Choudhury et al., 2025 – *Large Language Models in Mental Health Care: A Scoping Review*](https://www.nature.com/articles/s41746-025-01611-4)
 
-- **Lack of clinical alignment**: Labels such as “depression” or “suicide risk” are often **assigned without expert validation**, and their definitions vary significantly between datasets. Some labels reflect transient emotional states rather than **clinically diagnosed conditions**.
+- **Inconsistent label definitions**: Terms like “depression” or “suicide risk” are often loosely defined across datasets and lack validation from mental health experts, leading to variable interpretations of what constitutes clinical risk.  
+  *Supported by:* [Choudhury et al., 2025 – *Large Language Models in Mental Health Care: A Scoping Review*](https://www.nature.com/articles/s41746-025-01611-4)
 
-- **Scarcity of real clinical data**: High-quality, **clinically grounded datasets** suitable for AI model training and validation are **extremely limited**, making it difficult to deploy robust, safe, and reliable AI tools in real-world settings. Even when such datasets exist, **ethical concerns and privacy restrictions** often prevent public access, limiting reproducibility and broader model validation.
+- **Scarcity of high-quality clinical datasets**: Clinically grounded datasets suitable for model development and validation are rare. Even when available, ethical and privacy restrictions often prevent public access, limiting reproducibility and validation.  
+  *Supported by:* [Choudhury et al., 2025 – *Large Language Models in Mental Health Care: A Scoping Review*](https://www.nature.com/articles/s41746-025-01611-4)
 
-- **Lack of standard benchmarks**: Unlike fields like image recognition (ImageNet) or NLP (GLUE), the mental health domain lacks a widely accepted benchmark dataset and evaluation protocol. This hinders fair performance comparisons and slows systematic progress. 
+- **Lack of standard benchmarks**: Unlike ImageNet in vision or GLUE in NLP, mental health doesn’t have widely accepted benchmark datasets or evaluation protocols, making performance comparisons across studies difficult and slowing field-wide progress.  
+  *Supported by:* [Choudhury et al., 2025 – *Large Language Models in Mental Health Care: A Scoping Review*](https://www.nature.com/articles/s41746-025-01611-4)
+
 
 
 ---
@@ -113,10 +118,13 @@ Despite the growing availability of datasets in the field of AI for mental healt
 AI systems designed for **collaborative mental health care** are emerging in two key areas:
 
 ### 1. 🛑 Early Stage Risk Detection  
-AI tools help triage high-risk individuals by **automatically flagging suicidal ideation or distress** in real time from user-generated content. These systems are designed to **assist clinicians**, reducing response time and enabling timely intervention.
+AI tools help triage high-risk individuals by **automatically flagging suicidal ideation or distress** in real time from user-generated content. These systems are designed to **assist clinicians**, reducing response time and enabling timely intervention.  
+*Supported by:* [Hua et al., 2024 – *Large Language Models in Mental Health Care: A Scoping Review*](https://www.nature.com/articles/s41746-025-01611-4)
 
-### 2. 💬 Early Stage Self-Support and Education  
-Conversational agents (e.g., chatbots) are deployed to provide **CBT-based coaching, psychoeducation**, or **low-risk symptom check-ins**, supporting individuals with **mild-to-moderate** symptoms before professional care is needed.
+### 2. 💬 Early Stage Self‑Support & Education  
+Conversational agents (e.g. chatbots) provide **CBT‑based coaching, psychoeducation**, or **low‑risk symptom check‑ins**, supporting individuals with **mild‑to‑moderate** symptoms before professional care is needed.  
+*Supported by:* [Hua et al., 2024 – *Large Language Models in Mental Health Care: A Scoping Review*](https://www.nature.com/articles/s41746-025-01611-4)
+
 
 ---
 
@@ -124,7 +132,14 @@ Conversational agents (e.g., chatbots) are deployed to provide **CBT-based coach
 
 As AI systems increasingly **interact with vulnerable individuals**, their outputs must be **transparent and trustworthy**:
 
-- For **risk detection**, clinicians need to understand *why* a post or message is flagged as dangerous.
-- For **self-support tools**, users deserve clarity on how recommendations (e.g., “try journaling”) are generated.
+- For **risk detection**, clinicians need to understand *why* a post or message is flagged as dangerous—identifying which linguistic cues triggered the alert and whether the reasoning aligns with clinical judgment.  
+  *Supported by:* A systematic review emphasizes that interpretability (e.g., XAI methods) significantly influences clinicians’ trust in AI-generated risk assessments, but only when explanations are coherent and clinically meaningful. ([JMIR AI Trust Review, 2024](https://ai.jmir.org/2024/1/e53207), see “explanations enhance clinicians’ trust”) :contentReference[oaicite:1]{index=1}
+
+- For **self-support tools**, users deserve clarity on how recommendations (e.g., “try journaling”) are generated, to build transparency and adherence. Interpretability helps users feel confident that advice is reasoned and safe.  
+  *Supported by:* Research in digital health underscores that explainability not only aids clinician oversight but also improves user acceptance and safety perception in sensitive applications like mental health. ([Explainable AI for Mental Health, PMC 2022](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9849399/)) :contentReference[oaicite:2]{index=2}
+
+- Overall, interpretability is essential for establishing **clinical trust, accountability, and safety** in AI‑augmented mental health systems.  
+  *Supported by:* Broader AI-in-healthcare reviews confirm that transparent models enable effective oversight and continuous improvement—key for deploying decision-support tools in clinical settings. ([WHO‑aligned XAI framework for e‑Health interventions, 2023](https://arxiv.org/pdf/2311.11055)) :contentReference[oaicite:3]{index=3}
+
 
 Therefore, recent research has shifted toward developing models with **built-in explainability**, such as highlighting linguistic cues, extracting causal factors, or generating natural-language rationales.
