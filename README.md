@@ -101,7 +101,10 @@ Despite the growing availability of datasets in the field of AI for mental healt
 
 - **Lack of clinical alignment**: Labels such as “depression” or “suicide risk” are often **assigned without expert validation**, and their definitions vary significantly between datasets. Some labels reflect transient emotional states rather than **clinically diagnosed conditions**.
 
-- **Scarcity of real clinical data**: High-quality, **clinically grounded datasets** suitable for AI model training and validation are **extremely limited**, making it difficult to deploy robust, safe, and reliable AI tools in real-world settings.
+- **Scarcity of real clinical data**: High-quality, **clinically grounded datasets** suitable for AI model training and validation are **extremely limited**, making it difficult to deploy robust, safe, and reliable AI tools in real-world settings. Even when such datasets exist, **ethical concerns and privacy restrictions** often prevent public access, limiting reproducibility and broader model validation.
+
+- **Lack of standard benchmarks**: Unlike fields like image recognition (ImageNet) or NLP (GLUE), the mental health domain lacks a widely accepted benchmark dataset and evaluation protocol. This hinders fair performance comparisons and slows systematic progress. 
+
 
 ---
 
